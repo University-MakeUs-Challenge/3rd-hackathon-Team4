@@ -5,18 +5,15 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.example.client.databinding.FragmentMeetingBinding
-import com.example.client.databinding.FragmentMypageBinding
+import com.example.client.databinding.FragmentMeetingThreeBinding
 
-class MypageFragment : Fragment() {
+class MeetingThreeFragment: Fragment() {
+
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
-
-    return FragmentMypageBinding.inflate(layoutInflater).root
-
+    ): View {
+        return FragmentMeetingThreeBinding.inflate(layoutInflater).root
     }
-
 }
