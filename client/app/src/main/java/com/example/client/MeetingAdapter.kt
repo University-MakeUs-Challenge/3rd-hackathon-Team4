@@ -1,11 +1,15 @@
 package com.example.client
 
+import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import android.widget.Filter
+import android.widget.Filterable
 import androidx.recyclerview.widget.RecyclerView
 import com.example.client.databinding.ItemMeetingDataBinding
 
-class MeetingAdapter(private val dataList: ArrayList<MeetingData>): RecyclerView.Adapter<MeetingAdapter.MeetingViewHolder>() {
+class MeetingAdapter(private val dataList: ArrayList<MeetingData>): RecyclerView.Adapter<MeetingAdapter.MeetingViewHolder>(),
+    Filterable {
 
     interface MyItemClickListener{
         fun onItemClick(meetingData: MeetingData)
@@ -36,12 +40,17 @@ class MeetingAdapter(private val dataList: ArrayList<MeetingData>): RecyclerView
             binding.itemTvFirst.text = data.mainTv
             binding.itemTvSecond.text = data.centerTv
             binding.itemTagTv1.text = data.tag1
+            binding.itemTagTv2.text = data.tag2
 
         }
     }
 
     override fun getItemCount(): Int {
         return dataList.size
+    }
+
+    override fun getFilter(): Filter {
+        TODO("Not yet implemented")
     }
 
 }

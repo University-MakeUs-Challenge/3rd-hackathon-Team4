@@ -23,6 +23,7 @@ class MeetingDetailFragment: Fragment() {
 
         binding.meetingTitle.text = getMeetTitle()
         binding.meetingDesc.text = getMeetContent()
+        binding.detailImg.setImageResource(getMeetInt()!!)
 
         return binding.root
     }
@@ -37,6 +38,12 @@ class MeetingDetailFragment: Fragment() {
         val sharedPreferences =
             activity?.getSharedPreferences("content", AppCompatActivity.MODE_PRIVATE)
         return sharedPreferences!!.getString("content", null)
+    }
+
+    private fun getMeetInt(): Int? {
+        val sharedPreferences =
+            activity?.getSharedPreferences("img", AppCompatActivity.MODE_PRIVATE)
+        return sharedPreferences!!.getInt("img", 0)
     }
 
 }

@@ -8,9 +8,14 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
+
     //meeting
     <color name="meeting_gray">#6A6A6A</color>
     <color name="meeting_tag_btn">#D9D9D9</color>
     <color name="meeting_back">#2E2E2E</color>
+
+
+    
     <color name="primary">#FF4A11</color>
+
 </resources>
