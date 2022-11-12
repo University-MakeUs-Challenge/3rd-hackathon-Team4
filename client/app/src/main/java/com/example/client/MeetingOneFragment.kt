@@ -37,7 +37,6 @@ class MeetingOneFragment: Fragment() {
             override fun onItemClick(meetingData: MeetingData) {
                 Log.d("meetingData",meetingData.toString())
 
-
                 activity!!.supportFragmentManager.beginTransaction()
                     .replace(R.id.main_frm, MeetingDetailFragment())
                     .commitAllowingStateLoss()

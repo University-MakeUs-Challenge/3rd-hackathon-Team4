@@ -59,7 +59,6 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="24dp"
                 android:layout_marginTop="21dp"
-                android:fontFamily="@font/ns_black"
                 android:text="학교별 랭킹"
                 android:textColor="@color/black"
                 android:textSize="22sp"
@@ -93,7 +92,8 @@
                 android:layout_height="wrap_content"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent">
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView6">
 
                 <ImageView
                     android:layout_width="wrap_content"
@@ -110,8 +110,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="40dp"
                     android:text="경희대학교"
-                    android:textSize="17sp"
                     android:textColor="#FF4A11"
+                    android:textSize="17sp"
                     app:layout_constraintEnd_toStartOf="@+id/imageView6"
                     app:layout_constraintTop_toTopOf="parent" />
 
@@ -135,11 +135,11 @@
                     android:id="@+id/linearLayout"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="19dp"
                     android:gravity="bottom"
                     app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent">
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
 
                     <ImageView
                         android:layout_width="wrap_content"
@@ -267,6 +267,7 @@
 
 
         <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout5"
             android:layout_width="match_parent"
             android:layout_height="153dp"
             android:layout_marginStart="18dp"

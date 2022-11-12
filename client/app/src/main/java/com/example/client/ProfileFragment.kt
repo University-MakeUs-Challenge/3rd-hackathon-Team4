@@ -6,27 +6,23 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.example.client.databinding.FragmentMeetingBinding
-import com.example.client.databinding.FragmentMeetingOneBinding
 import com.example.client.databinding.FragmentMypageBinding
+import com.example.client.databinding.FragmentProfileBinding
 
-class MypageFragment : Fragment() {
+class ProfileFragment : Fragment() {
 
-    private lateinit var  binding: FragmentMypageBinding
+    private lateinit var  binding: FragmentProfileBinding
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = FragmentMypageBinding.inflate(inflater)
 
-        binding.profile.setOnClickListener {
-            requireActivity().supportFragmentManager.beginTransaction()
-                .replace(R.id.main_frm, ProfileFragment())
-                .commitAllowingStateLoss()
-        }
+        binding = FragmentProfileBinding.inflate(inflater)
 
         return binding.root
+
     }
 
 }
