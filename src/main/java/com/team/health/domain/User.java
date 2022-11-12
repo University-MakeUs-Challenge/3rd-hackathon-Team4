@@ -14,6 +14,8 @@ public class User {
 
     private String name;
 
+    private String password; // Hashed Value
+
     private Integer age;
 
     private Rank rank = Rank.BRONZE;

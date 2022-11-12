@@ -16,4 +16,4 @@ public enum Rank {
     public int getValue(){
         return id;
     }
-};
+}
