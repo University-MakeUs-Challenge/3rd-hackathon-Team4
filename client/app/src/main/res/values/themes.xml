@@ -14,7 +14,6 @@
         <!-- Customize your theme here. -->
     </style>
 
-
     //meeting
     <style name="ChipTabLayout" parent="Widget.Design.TabLayout">
         <item name="tabIndicatorColor">@android:color/transparent</item>
