@@ -9,7 +9,6 @@ import com.example.client.databinding.FragmentMeetingBinding
 import com.example.client.databinding.FragmentMypageBinding
 
 class MypageFragment : Fragment() {
-
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,

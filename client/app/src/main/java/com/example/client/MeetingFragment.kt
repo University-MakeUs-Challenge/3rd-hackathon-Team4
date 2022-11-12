@@ -1,5 +1,6 @@
 package com.example.client
 
+import android.graphics.Color
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -9,6 +10,7 @@ import androidx.fragment.app.Fragment
 import com.example.client.databinding.FragmentMeetingBinding
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
+import java.util.Locale.filter
 
 class MeetingFragment : Fragment() {
 
@@ -35,6 +37,8 @@ class MeetingFragment : Fragment() {
             "전라도",
             "제주도",
         )
+
+
 
 
 

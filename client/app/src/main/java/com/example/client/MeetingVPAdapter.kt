@@ -1,7 +1,9 @@
 package com.example.client
 
+import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.viewpager2.adapter.FragmentStateAdapter
+
 
 class MeetingVPAdapter(fragmentActivity: MeetingFragment): FragmentStateAdapter(fragmentActivity) {
     override fun getItemCount(): Int = 8
@@ -19,5 +21,7 @@ class MeetingVPAdapter(fragmentActivity: MeetingFragment): FragmentStateAdapter(
             else -> MeetingOneFragment()
         }
     }
+
+
 
 }
