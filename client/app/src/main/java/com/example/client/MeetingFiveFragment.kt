@@ -5,15 +5,27 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.client.databinding.FragmentMeetingFiveBinding
+import com.example.client.databinding.FragmentMeetingFourBinding
 
 class MeetingFiveFragment: Fragment() {
+
+    private lateinit var  binding: FragmentMeetingFiveBinding
+    private var meetingList: ArrayList<MeetingData> = arrayListOf(
+        MeetingData(R.drawable.ic_meeting_item_soccer, "축구 3명 구해요", "같이 축구 하실 분~ 4명 모집합니다", "#경상도", "#축구"),
+        MeetingData(R.drawable.ic_meeting_item_run, "러닝 같이 해요!", "러닝하실 분~ 4명 모집합니다", "#경상도", "#달리기"),
+        MeetingData(R.drawable.ic_meeting_item_bike, "자전거 같이 탈 사람~!", "자전거 같이 타실 분~ 4명 모집합니다", "#경상도", "#자전거"),
+    )
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        return FragmentMeetingFiveBinding.inflate(layoutInflater).root
+        binding = FragmentMeetingFiveBinding.inflate(inflater)
+        binding.meetingRv.layoutManager = LinearLayoutManager(context, LinearLayoutManager.VERTICAL,  false)
+        binding.meetingRv.adapter = MeetingAdapter(meetingList)
+        return binding.root
     }
 }

@@ -5,4 +5,12 @@ data class MeetingData(
     val mainTv : String,
     val centerTv: String,
     val tag1: String,
+    val tag2 : String,
 )
+
+
+
+
+
+
+
