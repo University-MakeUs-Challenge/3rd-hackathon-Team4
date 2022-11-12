@@ -13,4 +13,20 @@
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+
+    <style name="text_">
+        <item name="fontFamily">@font/ns_black</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="text_bold_700_20">
+        <item name="fontFamily">@font/ptd_bold</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="text_bold_700_20">
+        <item name="fontFamily">@font/ptd_bold</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
 </resources>
