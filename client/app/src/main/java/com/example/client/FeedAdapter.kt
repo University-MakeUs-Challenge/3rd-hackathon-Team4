@@ -13,7 +13,7 @@ class FeedAdapter(private val feedList: ArrayList<FeedData>): RecyclerView.Adapt
     }
 
     override fun onBindViewHolder(holder: FeedAdapter.ViewHolder, position: Int) {
-       // holder.bind(feedList[position])
+        holder.bind(feedList[position])
         holder.itemView.setOnClickListener {
             mItemClickListener.onItemClick(feedList[position])
         }
@@ -36,9 +36,12 @@ class FeedAdapter(private val feedList: ArrayList<FeedData>): RecyclerView.Adapt
 
     inner class ViewHolder(val binding: ViewItemLayoutBinding): RecyclerView.ViewHolder(binding.root){
 
-//        fun bind(feed: FeedData){
-//            Glide.with(binding.postImgView)feed.img
-//        }
+        fun bind(feed: FeedData){
+                    Glide.with(binding.postImgView.context)
+                        .load(feed.img)
+                        .into(binding.postImgView)
+        }
+
     }
 
 }
