@@ -3,43 +3,237 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#2E2E2E"
     android:paddingHorizontal="16dp"
-    android:paddingTop="30dp">
+    android:paddingTop="20dp">
 
     <TextView
+        android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="마이페이지"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="22sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
+        android:id="@+id/title_icon"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent">
+
         <ImageView
             android:layout_width="21dp"
             android:layout_height="21dp"
-            android:layout_marginEnd="5dp"
+            android:layout_marginEnd="10dp"
             android:src="@drawable/glass" />
+
         <ImageView
             android:layout_width="21dp"
             android:layout_height="21dp"
             android:src="@drawable/bell" />
     </LinearLayout>
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp">
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rv_mypage"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/title">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/profile"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:background="@drawable/curved_gray_border_background"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/profile_img"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:src="@drawable/profile"
+                    app:layout_constraintBottom_toBottomOf="@id/profile"
+                    app:layout_constraintStart_toStartOf="@id/profile"
+                    app:layout_constraintTop_toTopOf="@id/profile" />
+
+                <TextView
+                    android:id="@+id/profile_subname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="30dp"
+                    android:text="길동 Univ"
+                    app:layout_constraintStart_toEndOf="@id/profile_img"
+                    app:layout_constraintTop_toTopOf="@id/profile" />
+
+                <TextView
+                    android:id="@+id/profile_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:text="홍길동"
+                    android:textColor="@color/black"
+                    android:textSize="21sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/profile_img"
+                    app:layout_constraintTop_toBottomOf="@id/profile_subname" />
+
+                <ImageView
+                    android:layout_width="17dp"
+                    android:layout_height="17dp"
+                    android:layout_marginStart="5dp"
+                    android:src="@drawable/pencil"
+                    app:layout_constraintBottom_toBottomOf="@id/profile_name"
+                    app:layout_constraintStart_toEndOf="@id/profile_name"
+                    app:layout_constraintTop_toTopOf="@id/profile_name" />
+
+                <TextView
+                    android:id="@+id/tag1"
+                    android:layout_width="56dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/curved_lightgray_background"
+                    android:gravity="center"
+                    android:text="#23"
+                    android:textColor="@color/white"
+                    app:layout_constraintStart_toEndOf="@id/profile_img"
+                    app:layout_constraintTop_toBottomOf="@id/profile_name" />
+
+                <TextView
+                    android:id="@+id/tag2"
+                    android:layout_width="56dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/curved_lightgray_background"
+                    android:gravity="center"
+                    android:text="#ENFP"
+                    android:textColor="@color/white"
+                    app:layout_constraintStart_toEndOf="@id/tag1"
+                    app:layout_constraintTop_toBottomOf="@id/profile_name" />
+
+                <TextView
+                    android:id="@+id/tag3"
+                    android:layout_width="56dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/curved_lightgray_background"
+                    android:gravity="center"
+                    android:text="#농구"
+                    android:textColor="@color/white"
+                    app:layout_constraintStart_toEndOf="@id/tag2"
+                    app:layout_constraintTop_toBottomOf="@id/profile_name" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/graph"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/curved_gray_border_background"
+                android:padding="20dp"
+                app:layout_constraintTop_toBottomOf="@id/profile">
+
+                <TextView
+                    android:id="@+id/graph_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="운동량 변화 그래프"
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@id/graph_img"
+                    app:layout_constraintStart_toStartOf="@id/graph" />
+
+                <ImageView
+                    android:id="@+id/graph_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/graph"
+                    app:layout_constraintEnd_toEndOf="@id/graph"
+                    app:layout_constraintStart_toStartOf="@id/graph"
+                    app:layout_constraintTop_toBottomOf="@id/graph_text" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/school"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/curved_gray_border_background"
+                android:padding="20dp"
+                app:layout_constraintTop_toBottomOf="@id/graph">
+
+                <TextView
+                    android:id="@+id/school_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="나의 학교 기여도 : 현재 5위"
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@id/school_img"
+                    app:layout_constraintStart_toStartOf="@id/school" />
+
+                <ImageView
+                    android:id="@+id/school_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/school"
+                    app:layout_constraintEnd_toEndOf="@id/school"
+                    app:layout_constraintStart_toStartOf="@id/school"
+                    app:layout_constraintTop_toBottomOf="@id/school_text" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/record"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/curved_gray_border_background"
+                android:padding="20dp"
+                app:layout_constraintTop_toBottomOf="@id/school">
+
+                <TextView
+                    android:id="@+id/record_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="여태까지 이만큼 운동했어요!"
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@id/record_img"
+                    app:layout_constraintStart_toStartOf="@id/record" />
+
+                <ImageView
+                    android:id="@+id/record_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="10dp"
+                    android:src="@drawable/record"
+                    app:layout_constraintEnd_toEndOf="@id/record"
+                    app:layout_constraintStart_toStartOf="@id/record"
+                    app:layout_constraintTop_toBottomOf="@id/record_text" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
