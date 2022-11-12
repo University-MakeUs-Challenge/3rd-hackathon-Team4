@@ -38,6 +38,7 @@ class FeedFragment : Fragment() {
         binding.rvFeed.layoutManager = GridLayoutManager(context, 3)
 
         return binding.root
+        return FragmentFeedBinding.inflate(layoutInflater).root
     }
 
 }

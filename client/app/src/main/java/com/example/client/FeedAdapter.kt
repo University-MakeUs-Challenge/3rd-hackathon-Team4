@@ -41,6 +41,7 @@ class FeedAdapter(private val feedList: ArrayList<FeedData>): RecyclerView.Adapt
                         .load(feed.img)
                         .into(binding.postImgView)
         }
+
     }
 
 }
