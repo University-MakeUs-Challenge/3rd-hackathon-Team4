@@ -7,4 +7,8 @@ import org.springframework.data.annotation.Id;
 public class User {
     @Id
     private Integer userId;
+
+    private String name;
+
+    private Integer age;
 }
