@@ -10,19 +10,17 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <TextView
-            android:id="@+id/textView"
+        <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="23dp"
-            android:layout_marginTop="27dp"
-            android:text="어플이름"
-            android:textColor="@color/white"
-            android:textSize="22dp"
+            android:layout_marginStart="24dp"
+            android:src="@drawable/title"
+            app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
+            android:id="@+id/imageView8"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="12dp"
@@ -46,12 +44,12 @@
             android:layout_width="match_parent"
             android:layout_height="381dp"
             android:layout_marginStart="18dp"
-            android:layout_marginTop="27dp"
+            android:layout_marginTop="28dp"
             android:layout_marginEnd="18dp"
             android:background="@drawable/curved_gray_border_background"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView">
+            app:layout_constraintTop_toBottomOf="@+id/imageView8">
 
             <TextView
                 android:id="@+id/textView3"
@@ -59,10 +57,6 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="24dp"
                 android:layout_marginTop="21dp"
-
-
-                android:fontFamily="@font/ns_black"
-
                 android:text="학교별 랭킹"
                 android:textColor="@color/black"
                 android:textSize="22sp"
@@ -82,7 +76,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
             <ImageView
-                android:id="@+id/imageView5"
+                android:id="@+id/feed_camera"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="28dp"
@@ -96,7 +90,8 @@
                 android:layout_height="wrap_content"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent">
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView6">
 
                 <ImageView
                     android:layout_width="wrap_content"
@@ -113,8 +108,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="40dp"
                     android:text="경희대학교"
-                    android:textSize="17sp"
                     android:textColor="#FF4A11"
+                    android:textSize="17sp"
                     app:layout_constraintEnd_toStartOf="@+id/imageView6"
                     app:layout_constraintTop_toTopOf="parent" />
 
@@ -138,11 +133,11 @@
                     android:id="@+id/linearLayout"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="19dp"
                     android:gravity="bottom"
                     app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent">
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
 
                     <ImageView
                         android:layout_width="wrap_content"
@@ -270,6 +265,7 @@
 
 
         <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout5"
             android:layout_width="match_parent"
             android:layout_height="153dp"
             android:layout_marginStart="18dp"

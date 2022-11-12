@@ -18,6 +18,7 @@ class MeetingTwoFragment: Fragment() {
         MeetingData(R.drawable.ic_meeting_item_run, "러닝 같이 해요!", "러닝하실 분~ 4명 모집합니다", "#서울", "#달리기"),
 
     )
+
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,

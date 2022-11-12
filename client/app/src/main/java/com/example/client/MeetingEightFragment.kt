@@ -7,7 +7,6 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.client.databinding.FragmentMeetingEightBinding
-import com.example.client.databinding.FragmentMeetingOneBinding
 
 class MeetingEightFragment: Fragment() {
 

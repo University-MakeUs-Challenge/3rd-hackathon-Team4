@@ -23,6 +23,10 @@ class FeedFragment : Fragment() {
 
         binding = FragmentFeedBinding.inflate(inflater,container,false)
 
+        binding.feedCamera.setOnClickListener {
+
+        }
+
         feedList.apply {
             add(FeedData(R.drawable.turtle))
             add(FeedData(R.drawable.turtle2))
