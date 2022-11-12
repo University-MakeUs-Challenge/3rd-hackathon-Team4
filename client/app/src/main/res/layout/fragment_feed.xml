@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#2E2E2E">
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/feed_top"
         android:layout_width="match_parent"
@@ -13,101 +14,148 @@
             android:id="@+id/tv_feed"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="300dp"
+            android:layout_marginStart="23dp"
+            android:layout_marginTop="27dp"
             android:text="인증피드"
-            android:textSize="30dp"
+            android:textColor="@color/white"
+            android:textSize="22dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
         <TextView
             android:id="@+id/textView5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
             android:text="좋아요 순"
-            tools:layout_editor_absoluteX="129dp"
-            tools:layout_editor_absoluteY="16dp"
-            app:layout_constraintEnd_toStartOf="@id/img_under"
-            app:layout_constraintStart_toEndOf="@+id/tv_feed"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:layout_marginTop="32dp"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tv_feed" />
+
+
         <ImageView
             android:id="@+id/img_under"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            app:layout_constraintEnd_toStartOf="@id/img_search"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginTop="36dp"
+            android:src="@drawable/ic_arrow_down_orange"
             app:layout_constraintStart_toEndOf="@+id/textView5"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/vector_15" />
-        <ImageView
-            android:id="@+id/img_search"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            app:layout_constraintEnd_toStartOf="@id/img_alarm"
-            app:layout_constraintHorizontal_bias="0.451"
-            app:layout_constraintStart_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/ic_search_black" />
+        />
 
         <ImageView
-            android:id="@+id/img_alarm"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:srcCompat="@drawable/ic_alarm_black"
-            tools:layout_editor_absoluteX="350dp"
-            tools:layout_editor_absoluteY="7dp"
-            app:layout_constraintEnd_toStartOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/img_search"
-            app:layout_constraintTop_toTopOf="parent"
-            />
+            android:layout_marginEnd="12dp"
+            android:src="@drawable/glass"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView"
+            app:layout_constraintEnd_toStartOf="@+id/imageView"
+            app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="31dp"
+            android:layout_marginEnd="20dp"
+            android:src="@drawable/bell"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
+    <ScrollView
+        android:layout_width="372dp"
         android:layout_height="wrap_content"
-        android:text="운동했던 사진들을"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/feed_top">
 
-        app:layout_constraintTop_toBottomOf="@id/feed_top"
-        tools:layout_editor_absoluteX="7dp" />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="372dp"
+            android:layout_height="654dp"
+            android:background="@drawable/curved_gray_border_background">
 
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="업로드하는 공간이에요"
-        app:layout_constraintStart_toStartOf="@id/textView4"
-        app:layout_constraintTop_toBottomOf="@id/textView4"
-        tools:layout_editor_absoluteX="225dp" />
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="21dp"
+                android:fontFamily="@font/ns_black"
+                android:text="운동했던 사진들을"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rv_feed"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textView6"
-        tools:layout_editor_absoluteX="-50dp"
-        tools:layout_editor_absoluteY="89dp" />
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:fontFamily="@font/ns_black"
+                android:text="업로드하는 공간이에요"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textView3" />
 
-    <TextView
-        android:id="@+id/textView7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="열심히 도전한 모습을"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_feed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textView6" />
 
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="21dp"
+                android:fontFamily="@font/ns_black"
+                android:text="열심히 도전한 모습을"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rv_feed" />
 
-    <TextView
-        android:id="@+id/textView8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="자랑해 주세요!"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="407dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textView7"/>
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:fontFamily="@font/ns_black"
+                android:text="자랑해 주세요!"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_feed2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textView8"
+                tools:layout_editor_absoluteX="-50dp"
+                tools:layout_editor_absoluteY="89dp" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

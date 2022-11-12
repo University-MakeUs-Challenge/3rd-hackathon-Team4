@@ -24,18 +24,22 @@ class FeedFragment : Fragment() {
         binding = FragmentFeedBinding.inflate(inflater,container,false)
 
         feedList.apply {
-            add(FeedData(R.drawable.bell))
-            add(FeedData(R.drawable.bell))
-            add(FeedData(R.drawable.bell))
-            add(FeedData(R.drawable.bell))
-            add(FeedData(R.drawable.bell))
-            add(FeedData(R.drawable.bell))
-            add(FeedData(R.drawable.bell))
+            add(FeedData(R.drawable.turtle))
+            add(FeedData(R.drawable.turtle2))
+            add(FeedData(R.drawable.turtle3))
+            add(FeedData(R.drawable.turtle4))
+            add(FeedData(R.drawable.turtle5))
+            add(FeedData(R.drawable.turtle6))
+            add(FeedData(R.drawable.turtle7))
+            add(FeedData(R.drawable.turtle8))
+            add(FeedData(R.drawable.turtle9))
         }
 
         val feedAdapter = FeedAdapter(feedList)
         binding.rvFeed.adapter = feedAdapter
         binding.rvFeed.layoutManager = GridLayoutManager(context, 3)
+        binding.rvFeed2.adapter = feedAdapter
+        binding.rvFeed2.layoutManager = GridLayoutManager(context, 3)
 
         return binding.root
         return FragmentFeedBinding.inflate(layoutInflater).root
