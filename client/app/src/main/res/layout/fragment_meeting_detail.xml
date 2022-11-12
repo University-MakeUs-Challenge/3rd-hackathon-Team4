@@ -73,14 +73,13 @@
             android:id="@+id/meeting_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="한강 러닝 같이 해요"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginTop="60dp"
-            android:textSize="20sp"
+            android:layout_marginTop="84dp"
             android:textColor="@color/black"
-            android:textStyle="bold"/>
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <View
             app:layout_constraintTop_toBottomOf="@id/meeting_title"
@@ -91,15 +90,14 @@
 
         <TextView
             android:id="@+id/meeting_desc"
-            app:layout_constraintTop_toBottomOf="@id/meeting_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:lineHeight="22dp"
-            android:text="시간은 의논하고 정해요. 관심 있으시면 신청 ㄱㄱ. 이번 기회에 정기적으로 만나서 러닝 같이 하실 분도 있으시면 댓글 달아주세요!"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginTop="70dp"
-            android:textStyle="bold" />
+            android:lineHeight="22dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/meeting_title" />
 
         <View
             app:layout_constraintTop_toBottomOf="@id/meeting_desc"

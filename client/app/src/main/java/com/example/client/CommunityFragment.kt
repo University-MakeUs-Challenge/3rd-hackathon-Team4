@@ -1,6 +1,7 @@
 package com.example.client
 
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -61,6 +62,21 @@ class CommunityFragment : Fragment() {
         binding.communityRv.adapter = communityAdapter
         binding.communityRv.layoutManager = LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false)
 
+            //리사이클러뷰의 각각 아이템을 클릭했을 때
+            communityAdapter.setMyItemClickListener(object: CommunityAdapter.MyItemClickListener{
+                override fun onItemClick(meetingData: Community) {
+                    Log.d("meetingData",meetingData.toString())
+
+//                    parentFragmentManager.beginTransaction()
+//                        .replace(R.id.main_frm, MeetingDetailFragment())
+//                        .commit()
+//
+//                    val bundle = Bundle()
+//                    bundle.putString("title", meetingData.mainTv)
+//                    bundle.putString("content", meetingData.centerTv)
+
+                }
+            })
         return binding.root
     }
 

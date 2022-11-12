@@ -15,6 +15,17 @@ class MainActivity : AppCompatActivity() {
         initBottomNavigation()
     }
 
+    fun changeFragment(index: Int){
+        when(index){
+            1 -> {
+                supportFragmentManager
+                    .beginTransaction()
+                    .replace(R.id.main_frm, MeetingDetailFragment())
+                    .commit()
+            }
+        }
+    }
+
     private fun initBottomNavigation() {
         supportFragmentManager.beginTransaction()
             .replace(R.id.main_frm, HomeFragment())
@@ -60,4 +71,6 @@ class MainActivity : AppCompatActivity() {
             false
         }
     }
+
+
 }
