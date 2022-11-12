@@ -38,7 +38,7 @@
     </LinearLayout>
 
     <ImageView
-        android:id="@+id/imageView5"
+        android:id="@+id/feed_camera"
         android:layout_width="125dp"
         android:layout_height="125dp"
         android:src="@drawable/curved_white_circle"
@@ -54,10 +54,10 @@
         android:layout_height="80dp"
         android:src="@drawable/man"
         android:translationZ="3dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView5"
-        app:layout_constraintEnd_toEndOf="@+id/imageView5"
-        app:layout_constraintStart_toStartOf="@+id/imageView5"
-        app:layout_constraintTop_toTopOf="@id/imageView5" />
+        app:layout_constraintBottom_toBottomOf="@+id/feed_camera"
+        app:layout_constraintEnd_toEndOf="@+id/feed_camera"
+        app:layout_constraintStart_toStartOf="@+id/feed_camera"
+        app:layout_constraintTop_toTopOf="@id/feed_camera" />
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
