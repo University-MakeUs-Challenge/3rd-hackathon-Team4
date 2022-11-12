@@ -7,7 +7,7 @@ import java.sql.SQLException;
 
 public class DBUtil {
     public static Connection getConnection() throws Exception {
-        String url = "jdbc:mysql://localhost:3306/umc?serverTimezone=UTC";
+        String url = "jdbc:mysql://localhost:3306/umc_hack?serverTimezone=UTC";
         String uid = "root";
         String upw = "family0831";
 

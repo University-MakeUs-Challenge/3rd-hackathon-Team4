@@ -24,6 +24,8 @@ public class User {
 
     private String email;
 
+    private String studentId;
+
     private LocalDateTime createdAt;
 
     private Integer universityId;

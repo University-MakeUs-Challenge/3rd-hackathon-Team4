@@ -4,7 +4,7 @@ import lombok.Getter;
 
 @Getter
 public class GetUserResponseDto {
-    private Integer StudentId;
+    private String studentId;
     private Integer universityId;
     private String password;
 }
