@@ -14,7 +14,7 @@ class FeedFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-
+        //val feedAdapter = FeedAdapter(context)
         return FragmentFeedBinding.inflate(layoutInflater).root
     }
 
