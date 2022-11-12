@@ -14,19 +14,11 @@
         <!-- Customize your theme here. -->
     </style>
 
-    <style name="text_">
-        <item name="fontFamily">@font/ns_black</item>
-        <item name="android:textSize">20sp</item>
-    </style>
-
-    <style name="text_bold_700_20">
-        <item name="fontFamily">@font/ptd_bold</item>
-        <item name="android:textSize">20sp</item>
-    </style>
-
-    <style name="text_bold_700_20">
-        <item name="fontFamily">@font/ptd_bold</item>
-        <item name="android:textSize">20sp</item>
+    //meeting
+    <style name="ChipTabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabIndicatorColor">@android:color/transparent</item>
+        <item name="tabBackground">@drawable/selector_tab</item>
+        <item name="tabSelectedTextColor">?android:textColorPrimary</item>
     </style>
 
 </resources>

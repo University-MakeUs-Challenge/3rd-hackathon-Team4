@@ -208,6 +208,7 @@
                 android:layout_marginTop="20dp"
                 android:background="@drawable/curved_gray_border_background"
                 android:padding="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/school">
 
                 <TextView
