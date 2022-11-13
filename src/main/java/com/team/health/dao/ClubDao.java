@@ -56,7 +56,7 @@ public class ClubDao {
     }
 
     public List<GetClubAllowRes> getAllowClub(int clubId) {
-        String getclubQuery = "select * from reservation WHERE is_allowed == true && club_id = ?"; //User 테이블에 존재하는 모든 회원들의 정보를 조회하는 쿼리
+        String getclubQuery = "select * from reservation WHERE is_allowed == true && reservation_id = ? "; //User 테이블에 존재하는 모든 회원들의 정보를 조회하는 쿼리
         return this.jdbcTemplate.query(getclubQuery,
                 (rs, rowNum) -> new GetClubAllowRes(
                         rs.getInt("reservationId")
