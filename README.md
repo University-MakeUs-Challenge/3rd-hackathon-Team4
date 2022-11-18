@@ -37,3 +37,6 @@
 | 신디(이채원) | 알렉스(고승희) | 쿼카(조윤진) | 박브레드(박예진) |
 | --- | --- | --- | --- |
 | [cindy-chaewon](https://github.com/cindy-chaewon) | [alex-koko](https://github.com/alex-koko) | [cyjadela](https://github.com/cyjadela) | [uiop5809](https://github.com/uiop5809) |
+
+![beauty_1668292730083](https://user-images.githubusercontent.com/97458548/202790867-2476d4ea-87fa-4caf-9732-0a3b658f2817.jpg)
+
