@@ -30,7 +30,7 @@
 
 | 비버닉(양원준) | 제인(황희정) | 미니(김민정) | 제니(김민겸) | 지니(이어진) |
 | --- | --- | --- | --- | --- |
-| [ywj9811](https://github.com/ywj9811) | [MingyeomKim](https://github.com/MingyeomKim)  | []() | [mingsound](https://github.com/mingsound21) | [eojin0814](https://github.com/eojin0814) |
+| [ywj9811](https://github.com/ywj9811) | []() | [mingsound](https://github.com/mingsound21) | [MingyeomKim](https://github.com/MingyeomKim) | [eojin0814](https://github.com/eojin0814) |
 
 ### 프론트엔드
 
