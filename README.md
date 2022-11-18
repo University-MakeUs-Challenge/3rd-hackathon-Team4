@@ -24,16 +24,16 @@
 
 | 비버닉(양원준) | 남나(남희주) |
 | --- | --- |
-| [ywj9811](https://github.com/ywj9811) |  |
+| [ywj9811](https://github.com/ywj9811)
 
 ### 백엔드
 
 | 비버닉(양원준) | 제인(황희정) | 미니(김민정) | 제니(김민겸) | 지니(이어진) |
 | --- | --- | --- | --- | --- |
-| [ywj9811](https://github.com/ywj9811) | []() | [mingsound](https://github.com/mingsound21) | [MingyeomKim](https://github.com/MingyeomKim) | [eojin0814](https://github.com/eojin0814) |
+| [ywj9811](https://github.com/ywj9811) | [glwjd](https://github.com/glwjd) | [mingsound](https://github.com/mingsound21) | [MingyeomKim](https://github.com/MingyeomKim) | [eojin0814](https://github.com/eojin0814) |
 
 ### 프론트엔드
 
-| 신디(이채원) | 알렉스(고승희) | 쿼카() | 박브레드(박예진) |
+| 신디(이채원) | 알렉스(고승희) | 쿼카(조윤진) | 박브레드(박예진) |
 | --- | --- | --- | --- |
-| []() | []() | []() | [uiop5809](https://github.com/uiop5809) |
+| [cindy-chaewon](https://github.com/cindy-chaewon) | [alex-koko](https://github.com/alex-koko) | [cyjadela](https://github.com/cyjadela) | [uiop5809](https://github.com/uiop5809) |
