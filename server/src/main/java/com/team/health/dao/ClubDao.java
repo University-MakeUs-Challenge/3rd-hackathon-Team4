@@ -1,6 +1,5 @@
 package com.team.health.dao;
 
-import com.team.health.BaseException;
 import com.team.health.dto.GetClubAllowRes;
 import com.team.health.dto.GetClubRes;
 import com.team.health.dto.PostClubApplyReq;

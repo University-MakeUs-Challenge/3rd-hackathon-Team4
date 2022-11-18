@@ -1,6 +1,5 @@
 package com.team.health.service;
 
-import com.team.health.BaseException;
 import com.team.health.dao.ClubDao;
 import com.team.health.dto.*;
 import org.slf4j.Logger;
@@ -8,8 +7,6 @@ import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-
-import static com.team.health.BaseResponseStatus.DATABASE_ERROR;
 
 @Service
 public class ClubService {
