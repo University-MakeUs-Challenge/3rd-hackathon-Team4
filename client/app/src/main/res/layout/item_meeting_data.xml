@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swc_data"
+    android:layout_width="match_parent"
+    android:layout_height="127dp"
+    android:layout_margin="5dp"
+    android:layout_marginBottom="10dp"
+    android:background="@drawable/item_meeting_background">
+
+    <ImageView
+        android:id="@+id/item_img"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/ic_meeting_item_bas"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/item_tv_first"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="22dp"
+        android:text="잠실에서 농구하실 분~"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/item_img"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/item_tv_second"
+        android:layout_width="115dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="2dp"
+        android:text="잠실에서 농구하실 분~ 4명 모집합니다"
+        android:textColor="@color/meeting_gray"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/item_img"
+        app:layout_constraintTop_toBottomOf="@+id/item_tv_first" />
+
+    <TextView
+        android:id="@+id/item_tag_tv1"
+        android:layout_width="56dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/item_meeting_tag"
+        android:padding="1dp"
+        android:text="#서울"
+        android:textAlignment="center"
+        android:textSize="11sp"
+        app:layout_constraintStart_toEndOf="@+id/item_img"
+        app:layout_constraintTop_toBottomOf="@+id/item_tv_second" />
+
+    <TextView
+        android:id="@+id/item_tag_tv2"
+        android:layout_width="56dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/item_meeting_tag"
+        android:padding="1dp"
+        android:text="#농구"
+        android:textAlignment="center"
+        android:textSize="11sp"
+        app:layout_constraintStart_toEndOf="@+id/item_tag_tv1"
+        app:layout_constraintTop_toBottomOf="@+id/item_tv_second" />
+
+    <TextView
+        android:id="@+id/item_tag_tv3"
+        android:layout_width="56dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/item_meeting_tag"
+        android:padding="1dp"
+        android:text="#23"
+        android:textAlignment="center"
+        android:textSize="11sp"
+        app:layout_constraintStart_toEndOf="@+id/item_tag_tv2"
+        app:layout_constraintTop_toBottomOf="@+id/item_tv_second" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
