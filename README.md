@@ -24,7 +24,7 @@
 
 | 비버닉(양원준) | 남나(남희주) |
 | --- | --- |
-| [ywj9811](https://github.com/ywj9811)
+| [ywj9811](https://github.com/ywj9811) | [namna21](https://github.com/namna21) |
 
 ### 백엔드
 
